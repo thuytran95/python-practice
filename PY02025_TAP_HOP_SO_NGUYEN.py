@@ -1,0 +1,12 @@
+n, m = map(int, input().split())
+setA = set(map(int, input().split()))
+setB = set(map(int, input().split()))
+
+setAB= setA.difference(setB)
+setBA= setB.difference(setA)
+listIntersect =sorted( list(setA.intersection(setB)))
+listAB = sorted(list(setAB))
+listBA = sorted(list(setBA))
+print(' '.join(map(str, listIntersect)))
+print(' '.join(map(str, listAB)))
+print(' '.join(map(str, listBA)))
